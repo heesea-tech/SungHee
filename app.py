@@ -147,7 +147,7 @@ with col_right:
                f"- 변전소 인입 가능 여부: {res['total_power_mva']:.2f} MVA")
 
 # [섹션 3] 제안 메시지
-st.warning("⚠️ 본 검토는 초기 Feasibility Study용이며, 실제 실시설계 시 구조 간섭 및 덕트 샔프트 면적에 따라 10~15% 오차가 발생할 수 있습니다.")
+st.warning("⚠️ 본 검토는 초기 Feasibility Study용이며, 실제 실시설계 시 구조 간섭 및 덕트 샤프트 면적에 따라 10~15% 오차가 발생할 수 있습니다.")
 
 st.divider()
 
@@ -382,3 +382,4 @@ if est_floors > 0:
         st.markdown("🔴 **전산실**: IT 장비 설치 공간")
         st.markdown("🔵 **공용**: 엘리베이터, 계단, 복도")
         st.markdown("🟠 **지원시설**: 화장실, 휴게실, 관리실")
+
