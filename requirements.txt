@@ -1,5 +1,5 @@
 streamlit
 pandas
-math
-plotly.graph_objects
-matplotlib
+os
+pdfplumber
+re
