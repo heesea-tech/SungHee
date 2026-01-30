@@ -196,7 +196,7 @@ with st.sidebar:
     req_cert = st.text_input("보유 자격증 (예:건축사)")
 
 # 메인 화면
-st.title("🏗️ 건설기술인 맞춤 인재 추천")
+st.title("HAEAHN PCM Career Management System")
 
 df = load_data(folder_path)
 
@@ -290,3 +290,4 @@ if df is not None:
 
 else:
     st.warning(f"'{folder_path}' 폴더에서 엑셀 파일을 찾을 수 없습니다. 먼저 추출 프로그램을 실행해 주세요.")
+
