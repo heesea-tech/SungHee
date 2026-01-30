@@ -50,7 +50,7 @@ def load_data(folder_path):
 # 사이드바: 검색 조건 및 설정
 with st.sidebar:
     st.header("⚙️ 시스템 설정")
-    folder_path = st.text_input("경력증명서 폴더 경로", value=r"C:\PYTHON\Career certificate")
+    folder_path = st.text_input("경력증명서 폴더 경로", value=r"C:\Career certificate")
 
     # --- 버튼들을 폴더 경로 바로 다음으로 이동함 ---
     st.divider()
@@ -290,5 +290,6 @@ if df is not None:
 
 else:
     st.warning(f"'{folder_path}' 폴더에서 엑셀 파일을 찾을 수 없습니다. 먼저 추출 프로그램을 실행해 주세요.")
+
 
 
