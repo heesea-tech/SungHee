@@ -11,7 +11,7 @@ job_options = ["건축", "토목", "전기", "기계", "설비", "조경", "안�
 project_type_options = ["공동주택", "공용청사", "공장", "교육연구시설", "문화및집회시설", "산업시설", "업무시설", "운수시설", "기타"]
 
 # 페이지 설정
-st.set_page_config(layout="wide", page_title="건설기술인 추천 시스템")
+st.set_page_config(layout="wide", page_title="HAEAHN PCM Career Management System")
 
 # 사이드바/메인 배경색 커스터마이징
 st.markdown(
@@ -290,4 +290,5 @@ if df is not None:
 
 else:
     st.warning(f"'{folder_path}' 폴더에서 엑셀 파일을 찾을 수 없습니다. 먼저 추출 프로그램을 실행해 주세요.")
+
 
