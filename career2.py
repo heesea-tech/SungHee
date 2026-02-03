@@ -177,9 +177,14 @@ with st.sidebar:
 
     st.divider()
     st.header("🔍 필수 검색 조건")
-    # 공종: 복수 선택 가능하도록 변경
+    # 공종: 드롭다운 대신 체크박스 형태로 표시하여 복수 선택 가능하도록 변경
     job_options = ["건축", "토목", "전기", "기계", "설비", "조경", "안전", "정보통신"]
-    req_job = st.multiselect("공종 (복수 선택 가능)", job_options, default=[])
+    st.write("공종 (복수 선택 가능)")
+    cols = st.columns(4)
+    req_job = []
+    for i, job in enumerate(job_options):
+        if cols[i % 4].checkbox(job, key=f"req_job_{job}"):
+            req_job.append(job)
     
     # 새로 추가: 공사종류 (복수 선택 가능)
     project_type_options = ["공동주택", "공용청사", "공장", "교육연구시설", "문화및집회시설", "산업시설", "업무시설", "운수시설", "기타"]
@@ -290,6 +295,3 @@ if df is not None:
 
 else:
     st.warning(f"'{folder_path}' 폴더에서 엑셀 파일을 찾을 수 없습니다. 먼저 추출 프로그램을 실행해 주세요.")
-
-
-
